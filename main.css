@@ -1,0 +1,34 @@
+body {
+  background-color: #A3C1AD;
+}
+.heading {
+  font-size: 150px;
+  text-align: center;
+}
+.entry {
+  border: 2px solid black;
+  font-family: Arial;
+  text-align: center;
+  background-color: #870022;
+  color: black;
+  font-size: 30px;
+  margin: 15px 500px 15px 500px;
+}
+.returner {
+  border: 2px solid black;
+  font-family: Arial;
+  text-align: center;
+  background-color: #870022;
+  color: black;
+  font-size: 30px;
+  margin: 15px 500px 15px 500px;
+}
+.runbutton {
+  border: 2px solid black;
+  font-family: Arial;
+  text-align: center;
+  background-color: #041690;
+  color: white;
+  font-size: 30px;
+  margin: 15px 500px 15px 500px;
+}
