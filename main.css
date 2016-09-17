@@ -10,13 +10,24 @@ body {
   background-color: #870022;
   margin: 15px 500px 15px 500px;
 }
-.entryspot {
+.enterspot {
   text-align: center;
   font-family: Arial;
-  font-size: 30px;
+  font-size: 50px;
   color: black;
   background-color: white;
-  margin: 10px 10px 10px 10px;
+  margin: 20px 20px 20px 20px;
+  padding: 3px 3px 3px 3px;
+}
+.runbutton {
+  border-radius: 8px;
+  border: 2px solid black;
+  font-family: Arial;
+  text-align: center;
+  background-color: #041690;
+  color: white;
+  font-size: 30px;
+  margin: 15px 650px 15px 650px;
 }
 .returner {
   border: 2px solid black;
@@ -26,17 +37,9 @@ body {
 .returnerspot {
   text-align: center;
   font-family: Arial;
-  font-size: 30px;
+  font-size: 50px;
   color: black;
   background-color: white;
-  margin: 10px 10px 10px 10px;
-}
-.runbutton {
-  border: 2px solid black;
-  font-family: Arial;
-  text-align: center;
-  background-color: #041690;
-  color: white;
-  font-size: 30px;
-  margin: 15px 500px 15px 500px;
+  margin: 20px 20px 20px 20px;
+  padding: 3px 3px 3px 3px;
 }
