@@ -7,21 +7,29 @@ body {
 }
 .entry {
   border: 2px solid black;
-  font-family: Arial;
-  text-align: center;
   background-color: #870022;
-  color: black;
-  font-size: 30px;
   margin: 15px 500px 15px 500px;
+}
+.entryspot {
+  text-align: center;
+  font-family: Arial;
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  margin: 10px 10px 10px 10px;
 }
 .returner {
   border: 2px solid black;
-  font-family: Arial;
-  text-align: center;
   background-color: #870022;
-  color: black;
-  font-size: 30px;
   margin: 15px 500px 15px 500px;
+}
+.returnerspot {
+  text-align: center;
+  font-family: Arial;
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  margin: 10px 10px 10px 10px;
 }
 .runbutton {
   border: 2px solid black;
