@@ -1,19 +1,23 @@
 body {
-  background-color: #A3C1AD;
+  background-color: #0A480D;
 }
 .heading {
-  font-size: 150px;
+  font-size: 53px;
   text-align: center;
+  font-family: cursive;
+  margin-top: 30px;
+  font-weight: bold;
+  color: white;
 }
 .entry {
   border: 2px solid black;
   background-color: #870022;
-  margin: 15px 500px 15px 500px;
+  margin: 15px 400px 15px 400px;
 }
 .enterspot {
   text-align: center;
   font-family: Arial;
-  font-size: 50px;
+  font-size: 25px;
   color: black;
   background-color: white;
   margin: 20px 20px 20px 20px;
@@ -26,18 +30,18 @@ body {
   text-align: center;
   background-color: #041690;
   color: white;
-  font-size: 30px;
-  margin: 15px 650px 15px 650px;
+  font-size: 15px;
+  margin: 15px 500px 15px 500px;
 }
 .returner {
   border: 2px solid black;
   background-color: #870022;
-  margin: 15px 500px 15px 500px;
+  margin: 15px 400px 15px 400px;
 }
 .returnerspot {
   text-align: center;
   font-family: Arial;
-  font-size: 50px;
+  font-size: 25px;
   color: black;
   background-color: white;
   margin: 20px 20px 20px 20px;
