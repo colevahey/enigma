@@ -37,6 +37,7 @@ body {
   border: 2px solid black;
   background-color: #870022;
   margin: 15px 400px 15px 400px;
+  width: 400px;
 }
 .returnerspot {
   text-align: center;
@@ -46,4 +47,7 @@ body {
   background-color: white;
   margin: 20px 20px 20px 20px;
   padding: 3px 3px 3px 3px;
+}
+.copy {
+  text-align: center;
 }
