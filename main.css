@@ -47,5 +47,11 @@ body {
   background-color: white;
   margin: 20px 20px 20px 20px;
   padding: 3px 3px 3px 3px;
+<<<<<<< HEAD
   float: center;
+=======
+}
+.copy {
+  text-align: center;
+>>>>>>> 592b061032542bbcc5e5d19e4c27f2fa9e54fd4e
 }
