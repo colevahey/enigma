@@ -31,7 +31,8 @@ body {
   background-color: #041690;
   color: white;
   font-size: 15px;
-  margin: 15px 500px 15px 500px;
+  margin: 15px 525px 15px 525px;
+  width: 200px;
 }
 .returner {
   border: 2px solid black;
