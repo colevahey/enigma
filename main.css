@@ -1,7 +1,7 @@
 body {
   background-color: #0A480D;
 }
-.heading {
+#heading {
   font-size: 53px;
   text-align: center;
   font-family: cursive;
@@ -9,12 +9,12 @@ body {
   font-weight: bold;
   color: white;
 }
-.entry {
+#entry {
   border: 2px solid black;
   background-color: #870022;
   margin: 15px 400px 15px 400px;
 }
-.enterspot {
+#enterspot {
   text-align: center;
   font-family: Arial;
   font-size: 25px;
@@ -23,7 +23,7 @@ body {
   margin: 20px 20px 20px 20px;
   padding: 3px 3px 3px 3px;
 }
-.runbutton {
+#runbutton {
   border-radius: 8px;
   border: 2px solid black;
   font-family: Arial;
@@ -33,12 +33,12 @@ body {
   font-size: 15px;
   margin: 15px 500px 15px 500px;
 }
-.returner {
+#returner {
   border: 2px solid black;
   background-color: #870022;
   margin: 15px 400px 15px 400px;
 }
-.returnerspot {
+#returnerspot {
   text-align: center;
   font-family: Arial;
   font-size: 25px;
