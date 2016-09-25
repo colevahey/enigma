@@ -6,20 +6,22 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./button.js"></script>
     <link rel="stylesheet" type="text/css" href="./main.css">
     <div id="heading">
       <p>Enigma</p>
     </div>
   </head>
   <body>
+    </div>
     <div id="entry">
       <div id="enterspot">
-        <p>Entry</p>
+        <input id="enterbar" type="text" name="search" placeholder="What is your message?"/>
       </div>
     </div>
-    <div id="runbutton">
+    <button id="runbutton" type="submit" name="button" onclick="buttonhit()" value="enter">
       <p>Runbutton</p>
-    </div>
+    </button>
     <div id="returner">
       <div id="returnerspot">
         <p>Returner</p>
