@@ -4,7 +4,6 @@ import letters as le
 import json
 import sys
 import skilstak.colors as c
-import message as me
 from os import system
 
 def run(message):
@@ -14,7 +13,7 @@ def run(message):
     inverse = {y:x for x,y in j.items()}
     n=1
     final = ""
-    elif message.startswith("#"):
+    if message.startswith("#"):
         while n < len(message):
             final += inverse[message[n]]
             n += 1
@@ -28,5 +27,4 @@ def run(message):
     print(final)
 
 if __name__=='__main__':
-    #run()
-    run(message = input(c.clear + c.red + "What is your message? >> " + c.orange))
+    run(input(c.clear + c.red + "What is your message? >> " + c.orange))
