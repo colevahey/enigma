@@ -7,18 +7,13 @@ import skilstak.colors as c
 import message as me
 from os import system
 
-def run():
+def run(message):
     with open('letters.json', 'r') as pfile:
         j=json.load(pfile)
         #le.Letter.a=j['a']
     inverse = {y:x for x,y in j.items()}
-    message = input(c.clear + c.red + "What is your message? >> " + c.orange)
     n=1
     final = ""
-    if message == "m":
-        while n < len(me.text):
-            final += inverse[me.text[n]]
-            n += 1
     elif message.startswith("#"):
         while n < len(message):
             final += inverse[message[n]]
@@ -33,4 +28,5 @@ def run():
     print(final)
 
 if __name__=='__main__':
-    run()
+    #run()
+    run(message = input(c.clear + c.red + "What is your message? >> " + c.orange))

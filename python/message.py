@@ -1,6 +1,0 @@
-text = "#eiax"
-text = "#aaa"
-text = "qw sqvxv"
-text = "#qw sqvxv"
-text = "#aojnnaojnaojna"
-text = "#W AC SQV PYV SQV PYV FPG ZAYS JPYS YVVJ DGYO SP DVS XVOEVTS GE PY SQV OSXVVSO GYJVX SQV OGY"
