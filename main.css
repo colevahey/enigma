@@ -9,6 +9,9 @@ body {
   font-weight: bold;
   color: white;
 }
+#container {
+  min-width: 1270px;
+}
 #entry {
   border: 2px solid black;
   background-color: #870022;
