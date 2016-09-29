@@ -8,6 +8,7 @@ var buttonhit = function(){
     document.getElementById("returnerspot").innerHTML = ('<p>' + message + '</p>')
   } else {
     console.log("There is not a message yet");
+    document.getElementById("returnerspot").innerHTML = ('<p>Message</p>')
   }
 }
 buttonhit()
