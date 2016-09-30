@@ -1,4 +1,4 @@
 ![](https://d13yacurqjgara.cloudfront.net/users/605032/screenshots/2627307/e.gif)
-# enigma
+# Enigma
 
-Webpage for my enigma project.
+My enigma project
