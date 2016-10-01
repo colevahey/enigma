@@ -10,7 +10,8 @@ body {
   color: white;
 }
 #container {
-  min-width: 1270px;
+  min-width: 700px;
+  margin: auto;
 }
 #entry {
   border: 2px solid black;
