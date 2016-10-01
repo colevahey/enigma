@@ -5,8 +5,8 @@ var le = require('./letters')
 
 var main = function() {
     var letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-    /*var a = random.choice(letters)
-    le.Letter.a=a
+    var a = Math.floor(Math.random(letters))
+    /*le.Letter.a=a
     le.Letter.A=a.title()
     letters.remove(a)
     b = random.choice(letters)
@@ -109,6 +109,6 @@ var main = function() {
     le.Letter.z=z
     le.Letter.Z=z.title()
     letters.remove(z)*/
-  console.log(colors.clear + colors.red + "Code:\n" + colors.orange/* + a+b+c+d+e+f+g+h+i+j+k+l+m+n+o+p+q+r+s+t+u+v+w+x+y+z*/)
+  console.log(colors.clear + colors.red + "Code:\n" + colors.orange + a/* + a+b+c+d+e+f+g+h+i+j+k+l+m+n+o+p+q+r+s+t+u+v+w+x+y+z*/)
 }
 main()
