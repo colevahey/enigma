@@ -23,8 +23,7 @@ def run(message):
         while n < len(message):
             final += j[message[n]]
             n += 1
-        system('''echo 'text = "''' + final + '''"' >> message.py''')
-    print(final)
+    return final
 
 if __name__=='__main__':
-    run(input(c.clear + c.red + "What is your message? >> " + c.orange))
+    print(run(input(c.clear + c.red + "What is your message? >> " + c.orange)))
