@@ -1,6 +1,7 @@
 class Letters {
   constructor(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z) {
     this.a = "a";
+    console.log(a)
     this.b = "b";
     this.c = "c";
     this.d = "d";
