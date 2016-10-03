@@ -11,4 +11,3 @@ var buttonhit = function(){
     document.getElementById("returnerspot").innerHTML = ('<p>Message</p>')
   }
 }
-buttonhit()
