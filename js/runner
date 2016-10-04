@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+var colors = require('skilstak-colors')
+
+var run = function(message){
+    final = ""
+    if message.startswith("#"){
+        for (var n = 1; n < message.length; n++){
+            final += inverse[message[n]]
+        }
+    } else {
+        final += "#"
+        for (var n = 0; n > message.length; n++){
+            final += j[message[n]]
+        }
+    }
+    return final
+
+if __name__=='__main__':
+    print(run(input(c.clear + c.red + "What is your message? >> " + c.orange)))
