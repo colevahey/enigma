@@ -12,131 +12,131 @@ var main = function() {
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var b = letters[index]
-  Letters.b = a
+  Letters.b = b
   Letters.B = b.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var c = letters[index]
-  Letters.c = a
+  Letters.c = c
   Letters.C = c.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var d = letters[index]
-  Letters.d = a
+  Letters.d = d
   Letters.D = d.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var e = letters[index]
-  Letters.e = a
+  Letters.e = e
   Letters.E = e.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var f = letters[index]
-  Letters.f = a
+  Letters.f = f
   Letters.F = f.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var g = letters[index]
-  Letters.g = a
+  Letters.g = g
   Letters.G = g.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var h = letters[index]
-  Letters.h = a
+  Letters.h = h
   Letters.H = h.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var i = letters[index]
-  Letters.i = a
+  Letters.i = i
   Letters.I = i.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var j = letters[index]
-  Letters.a = a
+  Letters.j = j
   Letters.J = j.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var k = letters[index]
-  Letters.a = a
+  Letters.k = k
   Letters.K = k.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var l = letters[index]
-  Letters.a = a
+  Letters.l = l
   Letters.L = l.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var m = letters[index]
-  Letters.a = a
+  Letters.m = m
   Letters.M = m.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var n = letters[index]
-  Letters.a = a
+  Letters.n = n
   Letters.N = n.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var o = letters[index]
-  Letters.a = a
+  Letters.o = o
   Letters.O = o.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var p = letters[index]
-  Letters.a = a
+  Letters.p = p
   Letters.P = p.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var q = letters[index]
-  Letters.a = a
+  Letters.q = q
   Letters.Q = q.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var r = letters[index]
-  Letters.a = a
+  Letters.r = r
   Letters.R = r.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var s = letters[index]
-  Letters.a = a
+  Letters.s = s
   Letters.S = s.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var t = letters[index]
-  Letters.a = a
+  Letters.t = t
   Letters.T = t.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var u = letters[index]
-  Letters.a = a
+  Letters.u = u
   Letters.U = u.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var v = letters[index]
-  Letters.a = a
+  Letters.v = v
   Letters.V = v.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var w = letters[index]
-  Letters.a = a
+  Letters.w = w
   Letters.W = w.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var x = letters[index]
-  Letters.a = a
+  Letters.x = x
   Letters.X = x.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var y = letters[index]
-  Letters.a = a
+  Letters.y = y
   Letters.Y = y.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var z = letters[index]
-  Letters.a = a
+  Letters.z = z
   Letters.Z = z.toUpperCase()
   letters.splice(index, 1);
   console.log(colors.clear + colors.red + "Code:\n" + colors.orange + a+b+c+d+e+f+g+h+i+j+k+l+m+n+o+p+q+r+s+t+u+v+w+x+y+z)
-  console.log(Letters.a)
+  console.log(Letters)
 }
 
 main()
