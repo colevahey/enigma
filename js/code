@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 var colors = require('skilstak-colors')
+var Letters = new Object()
 
 var main = function() {
   var letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-  var Letters = new Object()
   var index = Math.floor(Math.random() * letters.length)
   var a = letters[index]
   Letters.a = a
@@ -136,7 +136,7 @@ var main = function() {
   Letters.Z = z.toUpperCase()
   letters.splice(index, 1);
   console.log(colors.clear + colors.red + "Code:\n" + colors.orange + a+b+c+d+e+f+g+h+i+j+k+l+m+n+o+p+q+r+s+t+u+v+w+x+y+z)
-  console.log(Letters)
 }
 
 main()
+console.log(Letters.b)
