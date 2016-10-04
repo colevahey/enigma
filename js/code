@@ -4,110 +4,139 @@ var colors = require('skilstak-colors')
 
 var main = function() {
   var letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+  var Letters = new Object()
   var index = Math.floor(Math.random() * letters.length)
   var a = letters[index]
-  var A = a.toUpperCase()
+  Letters.a = a
+  Letters.A = a.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var b = letters[index]
-  var B = b.toUpperCase()
+  Letters.b = a
+  Letters.B = b.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var c = letters[index]
-  var C = c.toUpperCase()
+  Letters.c = a
+  Letters.C = c.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var d = letters[index]
-  var D = d.toUpperCase()
+  Letters.d = a
+  Letters.D = d.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var e = letters[index]
-  var E = e.toUpperCase()
+  Letters.e = a
+  Letters.E = e.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var f = letters[index]
-  var F = f.toUpperCase()
+  Letters.f = a
+  Letters.F = f.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var g = letters[index]
-  var G = g.toUpperCase()
+  Letters.g = a
+  Letters.G = g.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var h = letters[index]
-  var H = h.toUpperCase()
+  Letters.h = a
+  Letters.H = h.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var i = letters[index]
-  var I = i.toUpperCase()
+  Letters.i = a
+  Letters.I = i.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var j = letters[index]
-  var J = j.toUpperCase()
+  Letters.a = a
+  Letters.J = j.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var k = letters[index]
-  var K = k.toUpperCase()
+  Letters.a = a
+  Letters.K = k.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var l = letters[index]
-  var L = l.toUpperCase()
+  Letters.a = a
+  Letters.L = l.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var m = letters[index]
-  var M = m.toUpperCase()
+  Letters.a = a
+  Letters.M = m.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var n = letters[index]
-  var N = n.toUpperCase()
+  Letters.a = a
+  Letters.N = n.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var o = letters[index]
-  var O = o.toUpperCase()
+  Letters.a = a
+  Letters.O = o.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var p = letters[index]
-  var P = p.toUpperCase()
+  Letters.a = a
+  Letters.P = p.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var q = letters[index]
-  var Q = q.toUpperCase()
+  Letters.a = a
+  Letters.Q = q.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var r = letters[index]
-  var R = r.toUpperCase()
+  Letters.a = a
+  Letters.R = r.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var s = letters[index]
-  var S = s.toUpperCase()
+  Letters.a = a
+  Letters.S = s.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var t = letters[index]
-  var T = t.toUpperCase()
+  Letters.a = a
+  Letters.T = t.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var u = letters[index]
-  var U = u.toUpperCase()
+  Letters.a = a
+  Letters.U = u.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var v = letters[index]
-  var V = v.toUpperCase()
+  Letters.a = a
+  Letters.V = v.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var w = letters[index]
-  var W = w.toUpperCase()
+  Letters.a = a
+  Letters.W = w.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var x = letters[index]
-  var X = x.toUpperCase()
+  Letters.a = a
+  Letters.X = x.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var y = letters[index]
-  var Y = y.toUpperCase()
+  Letters.a = a
+  Letters.Y = y.toUpperCase()
   letters.splice(index, 1);
   index = Math.floor(Math.random() * letters.length)
   var z = letters[index]
-  var Z = z.toUpperCase()
+  Letters.a = a
+  Letters.Z = z.toUpperCase()
   letters.splice(index, 1);
   console.log(colors.clear + colors.red + "Code:\n" + colors.orange + a+b+c+d+e+f+g+h+i+j+k+l+m+n+o+p+q+r+s+t+u+v+w+x+y+z)
+  console.log(Letters.a)
 }
+
 main()
