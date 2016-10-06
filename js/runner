@@ -3,18 +3,18 @@
 var colors = require('skilstak-colors')
 
 var run = function(message){
-    final = ""
-    if message.startswith("#"){
-        for (var n = 1; n < message.length; n++){
-            final += inverse[message[n]]
-        }
-    } else {
-        final += "#"
-        for (var n = 0; n > message.length; n++){
-            final += j[message[n]]
-        }
-    }
-    return final
+  final = ""
+  if (message.startsWith("#")){
+      for (var n = 1; n < message.length; n++){
+          final += /*inverse[*/message[n]/*]*/
+      }
+  } else {
+      final += "#"
+      for (var n = 0; n < message.length; n++){
+          final += /*j[*/message[n]/*]*/
+      }
+  }
+  console.log(final)
+}
 
-if __name__=='__main__':
-    print(run(input(c.clear + c.red + "What is your message? >> " + c.orange)))
+run("#Hey there my dude")

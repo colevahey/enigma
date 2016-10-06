@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var colors = require('skilstak-colors')
-var Letters = {a:"a",b:"b",c:"c",d:"d",e:"e",f:"f",g:"g",h:"h",i:"i",j:"j",k:"k",l:"l",m:"m",n:"n",o:"o",p:"p",q:"q",r:"r",s:"s",t:"t",u:"u",v:"v",w:"w",x:"x",y:"y",z:"z"}
+var Letters = {a:"z",b:"y",c:"x",d:"w",e:"v",f:"u",g:"t",h:"s",i:"r",j:"q",k:"p",l:"o",m:"n",n:"m",o:"l",p:"k",q:"j",r:"i",s:"h",t:"g",u:"f",v:"e",w:"d",x:"c",y:"b",z:"a"}
 
 var main = function() {
   var letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
@@ -138,6 +138,20 @@ var main = function() {
   console.log(/*colors.clear + */colors.red + "Code:\n" + colors.orange + a+b+c+d+e+f+g+h+i+j+k+l+m+n+o+p+q+r+s+t+u+v+w+x+y+z)
 }
 
-console.log(Letters.a)
-main()
-console.log(Letters.a)
+var run = function(message){
+  final = ""
+  if (message.startsWith("#")){
+      for (var n = 1; n < message.length; n++){
+          final += /*inverse[*/message[n]/*]*/
+      }
+  } else {
+      final += "#"
+      for (var n = 0; n < message.length; n++){
+          final += Letters.message[n]
+      }
+  }
+  console.log(final)
+}
+
+run("Hey there my dude")
+/*main()*/
