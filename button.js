@@ -1,13 +1,32 @@
 "use strict"
 
-var buttonhit = function(){
-  console.log("TWAS HIT");
+var buttonhit = function(json){
   var message = document.getElementById("enterbar").value
   if (message !== ""){
-    console.log("The message is " + message);
-    document.getElementById("returnerspot").innerHTML = ('<p>' + message + '</p>')
+    run(message, json)
   } else {
     console.log("There is no message");
     document.getElementById("returnerspot").innerHTML = ('<p>Message</p>')
   }
+}
+
+var run = function(message, json){
+  var finalmessage = ""
+  if (message.startsWith("#")){
+    var ret = {};
+    for(var key in json){
+      ret[json[key]] = key
+    }
+    for (var n = 1; n < message.length; n++){
+      var jsonindex = message[n]
+      finalmessage += ret[jsonindex]
+    }
+  } else {
+    finalmessage += "#"
+    for (var n = 0; n < message.length; n++){
+      var jsonindex = message[n]
+      finalmessage += json[jsonindex]
+    }
+  }
+  document.getElementById("returnerspot").innerHTML = ('<p>' + finalmessage + '</p>')
 }
