@@ -1,163 +1,118 @@
-#!/usr/bin/env node
+#!/usr/bin/env python3
 
-var colors = require('skilstak-colors')
-var Letters = {a:"z",b:"y",c:"x",d:"w",e:"v",f:"u",g:"t",h:"s",i:"r",j:"q",k:"p",l:"o",m:"n",n:"m",o:"l",p:"k",q:"j",r:"i",s:"h",t:"g",u:"f",v:"e",w:"d",x:"c",y:"b",z:"a"}
+import random
+import letters as le
+import save
+import skilstak.colors as colors
 
-var main = function() {
-  var letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-  var index = Math.floor(Math.random() * letters.length)
-  var a = letters[index]
-  Letters.a = a
-  Letters.A = a.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var b = letters[index]
-  Letters.b = b
-  Letters.B = b.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var c = letters[index]
-  Letters.c = c
-  Letters.C = c.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var d = letters[index]
-  Letters.d = d
-  Letters.D = d.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var e = letters[index]
-  Letters.e = e
-  Letters.E = e.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var f = letters[index]
-  Letters.f = f
-  Letters.F = f.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var g = letters[index]
-  Letters.g = g
-  Letters.G = g.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var h = letters[index]
-  Letters.h = h
-  Letters.H = h.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var i = letters[index]
-  Letters.i = i
-  Letters.I = i.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var j = letters[index]
-  Letters.j = j
-  Letters.J = j.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var k = letters[index]
-  Letters.k = k
-  Letters.K = k.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var l = letters[index]
-  Letters.l = l
-  Letters.L = l.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var m = letters[index]
-  Letters.m = m
-  Letters.M = m.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var n = letters[index]
-  Letters.n = n
-  Letters.N = n.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var o = letters[index]
-  Letters.o = o
-  Letters.O = o.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var p = letters[index]
-  Letters.p = p
-  Letters.P = p.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var q = letters[index]
-  Letters.q = q
-  Letters.Q = q.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var r = letters[index]
-  Letters.r = r
-  Letters.R = r.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var s = letters[index]
-  Letters.s = s
-  Letters.S = s.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var t = letters[index]
-  Letters.t = t
-  Letters.T = t.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var u = letters[index]
-  Letters.u = u
-  Letters.U = u.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var v = letters[index]
-  Letters.v = v
-  Letters.V = v.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var w = letters[index]
-  Letters.w = w
-  Letters.W = w.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var x = letters[index]
-  Letters.x = x
-  Letters.X = x.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var y = letters[index]
-  Letters.y = y
-  Letters.Y = y.toUpperCase()
-  letters.splice(index, 1);
-  index = Math.floor(Math.random() * letters.length)
-  var z = letters[index]
-  Letters.z = z
-  Letters.Z = z.toUpperCase()
-  letters.splice(index, 1);
-  console.log(/*colors.clear + */colors.red + "Code:\n" + colors.orange + a+b+c+d+e+f+g+h+i+j+k+l+m+n+o+p+q+r+s+t+u+v+w+x+y+z)
-}
+def main():
+    letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    a = random.choice(letters)
+    le.Letter.a=a
+    le.Letter.A=a.title()
+    letters.remove(a)
+    b = random.choice(letters)
+    le.Letter.b=b
+    le.Letter.B=b.title()
+    letters.remove(b)
+    c = random.choice(letters)
+    le.Letter.c=c
+    le.Letter.C=c.title()
+    letters.remove(c)
+    d = random.choice(letters)
+    le.Letter.d=d
+    le.Letter.D=d.title()
+    letters.remove(d)
+    e = random.choice(letters)
+    le.Letter.e=e
+    le.Letter.E=e.title()
+    letters.remove(e)
+    f = random.choice(letters)
+    le.Letter.f=f
+    le.Letter.F=f.title()
+    letters.remove(f)
+    g = random.choice(letters)
+    le.Letter.g=g
+    le.Letter.G=g.title()
+    letters.remove(g)
+    h = random.choice(letters)
+    le.Letter.h=h
+    le.Letter.H=h.title()
+    letters.remove(h)
+    i = random.choice(letters)
+    le.Letter.i=i
+    le.Letter.I=i.title()
+    letters.remove(i)
+    j = random.choice(letters)
+    le.Letter.j=j
+    le.Letter.J=j.title()
+    letters.remove(j)
+    k = random.choice(letters)
+    le.Letter.k=k
+    le.Letter.K=k.title()
+    letters.remove(k)
+    l = random.choice(letters)
+    le.Letter.l=l
+    le.Letter.L=l.title()
+    letters.remove(l)
+    m = random.choice(letters)
+    le.Letter.m=m
+    le.Letter.M=m.title()
+    letters.remove(m)
+    n = random.choice(letters)
+    le.Letter.n=n
+    le.Letter.N=n.title()
+    letters.remove(n)
+    o = random.choice(letters)
+    le.Letter.o=o
+    le.Letter.O=o.title()
+    letters.remove(o)
+    p = random.choice(letters)
+    le.Letter.p=p
+    le.Letter.P=p.title()
+    letters.remove(p)
+    q = random.choice(letters)
+    le.Letter.q=q
+    le.Letter.Q=q.title()
+    letters.remove(q)
+    r = random.choice(letters)
+    le.Letter.r=r
+    le.Letter.R=r.title()
+    letters.remove(r)
+    s = random.choice(letters)
+    le.Letter.s=s
+    le.Letter.S=s.title()
+    letters.remove(s)
+    t = random.choice(letters)
+    le.Letter.t=t
+    le.Letter.T=t.title()
+    letters.remove(t)
+    u = random.choice(letters)
+    le.Letter.u=u
+    le.Letter.U=u.title()
+    letters.remove(u)
+    v = random.choice(letters)
+    le.Letter.v=v
+    le.Letter.V=v.title()
+    letters.remove(v)
+    w = random.choice(letters)
+    le.Letter.w=w
+    le.Letter.W=w.title()
+    letters.remove(w)
+    x = random.choice(letters)
+    le.Letter.x=x
+    le.Letter.X=x.title()
+    letters.remove(x)
+    y = random.choice(letters)
+    le.Letter.y=y
+    le.Letter.Y=y.title()
+    letters.remove(y)
+    z = random.choice(letters)
+    le.Letter.z=z
+    le.Letter.Z=z.title()
+    letters.remove(z)
+    print(colors.clear + colors.red + "Code:\n" + colors.orange + a+b+c+d+e+f+g+h+i+j+k+l+m+n+o+p+q+r+s+t+u+v+w+x+y+z)
+    save.save()
 
-var run = function(message, json){
-  final = ""
-  if (message.startsWith("#")){
-    var ret = {};
-    for(var key in json){
-      ret[json[key]] = key
-    }
-    for (var n = 1; n < message.length; n++){
-      var jsonindex = message[n]
-      final += ret[jsonindex]
-    }
-  } else {
-    final += "#"
-    for (var n = 0; n < message.length; n++){
-      var jsonindex = message[n]
-      final += json[jsonindex]
-    }
-  }
-  console.log(final)
-}
-
-run("aaa", Letters)
-/*main()*/
+if __name__ == '__main__':
+    main()
