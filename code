@@ -138,20 +138,26 @@ var main = function() {
   console.log(/*colors.clear + */colors.red + "Code:\n" + colors.orange + a+b+c+d+e+f+g+h+i+j+k+l+m+n+o+p+q+r+s+t+u+v+w+x+y+z)
 }
 
-var run = function(message){
+var run = function(message, json){
   final = ""
   if (message.startsWith("#")){
-      for (var n = 1; n < message.length; n++){
-          final += /*inverse[*/message[n]/*]*/
-      }
+    var ret = {};
+    for(var key in json){
+      ret[json[key]] = key
+    }
+    for (var n = 1; n < message.length; n++){
+      var jsonindex = message[n]
+      final += ret[jsonindex]
+    }
   } else {
-      final += "#"
-      for (var n = 0; n < message.length; n++){
-          final += Letters.message[n]
-      }
+    final += "#"
+    for (var n = 0; n < message.length; n++){
+      var jsonindex = message[n]
+      final += json[jsonindex]
+    }
   }
   console.log(final)
 }
 
-run("Hey there my dude")
+run("aaa", Letters)
 /*main()*/
