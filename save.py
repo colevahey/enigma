@@ -68,7 +68,17 @@ def save():
             "&":le.Letter.andsign,
             "%":le.Letter.percent,
             "(":le.Letter.parenthesisleft,
-            ")":le.Letter.parenthesisright
+            ")":le.Letter.parenthesisright,
+            "0":le.Letter.zero,
+            "1":le.Letter.one,
+            "2":le.Letter.two,
+            "3":le.Letter.three,
+            "4":le.Letter.four,
+            "5":le.Letter.five,
+            "6":le.Letter.six,
+            "7":le.Letter.seven,
+            "8":le.Letter.eight,
+            "9":le.Letter.nine
             }))
         
 if __name__=='__main__':
