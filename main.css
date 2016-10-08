@@ -64,3 +64,7 @@ body {
   margin: 20px 20px 20px 20px;
   padding: 3px 3px 3px 3px;
 }
+#copytoclip {
+  position: left;
+  height: 10px;
+}
