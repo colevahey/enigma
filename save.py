@@ -3,7 +3,7 @@ import letters as le
 from os import system as sys
 
 def save():
-    with open('letters.js', 'w') as pfile:
+    with open('currentcode.js', 'w') as pfile:
         pfile.write('var Letters = ' + json.dumps({
             "a":le.Letter.a,
             "A":le.Letter.A,

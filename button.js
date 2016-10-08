@@ -6,7 +6,7 @@ var buttonhit = function(json){
     run(message, json)
   } else {
     console.log("There is no message");
-    document.getElementById("encodedmessage").value = 'Message'
+    document.getElementById("returnerspot").innerHTML = '<p>Message</p>'
   }
 }
 
