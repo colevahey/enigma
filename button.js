@@ -6,7 +6,8 @@ var buttonhit = function(json){
     run(message, json)
   } else {
     console.log("There is no message");
-    document.getElementById("returnerspot").innerHTML = '<p>Message</p>'
+    /*document.getElementById("returnerspot").innerHTML = '<p>Message</p>'*/
+    document.getElementById("encodedmessage").innerHTML = 'Message'
   }
 }
 
@@ -28,5 +29,6 @@ var run = function(message, json){
       finalmessage += json[jsonindex]
     }
   }
-  document.getElementById("returnerspot").innerHTML = ('<p id="encodedmessage">' + finalmessage + '</p>')
+  /*document.getElementById("returnerspot").innerHTML = ('<p id="encodedmessage">' + finalmessage + '</p>')*/
+  document.getElementById("encodedmessage").innerHTML = finalmessage
 }
