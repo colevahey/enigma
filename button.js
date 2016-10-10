@@ -3,7 +3,7 @@
 var buttonhit = function(json){
   var message = document.getElementById("enterbar").value
   if (message !== ""){
-    var cool = Math.floor(Math.random()*20)
+    var cool = Math.floor(Math.random()*10)
     console.log(cool)
     run(message, json)
   } else {
