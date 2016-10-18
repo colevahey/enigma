@@ -24,8 +24,11 @@ var run = function(message, json){
   } else {
     finalmessage += "#"
     for (var n = 0; n < message.length; n++){
-    var jsonindex = message[n]
-      finalmessage += json[jsonindex]
+      var jsonindex = message[n]
+      if (jsonindex in json) {
+        finalmessage += json[jsonindex]
+      } else {
+        console.log('The character >>' + jsonindex + '<< is not supported')
     }
   }
   document.getElementById("encodedmessage").innerHTML = finalmessage
