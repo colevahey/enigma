@@ -24,7 +24,7 @@ var run = function(message, json){
   } else {
     finalmessage += "#"
     for (var n = 0; n < message.length; n++){
-      var jsonindex = message[n]
+    var jsonindex = message[n]
       finalmessage += json[jsonindex]
     }
   }
