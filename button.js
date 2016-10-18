@@ -28,7 +28,8 @@ var run = function(message, json){
       if (jsonindex in json) {
         finalmessage += json[jsonindex]
       } else {
-        console.log('The character >>' + jsonindex + '<< is not supported')
+        finalmessage = 'The character >>' + jsonindex + '<< is not supported'
+      }
     }
   }
   document.getElementById("encodedmessage").innerHTML = finalmessage
