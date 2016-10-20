@@ -19,7 +19,11 @@ var run = function(message, json){
     }
     for (var n = 1; n < message.length; n++){
       var jsonindex = message[n]
-      finalmessage += ret[jsonindex]
+      if (jsonindex in json) {
+        finalmessage += ret[jsonindex]
+      } else {
+        finalmessage += jsonindex
+      }
     }
   } else {
     finalmessage += "#"
