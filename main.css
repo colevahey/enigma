@@ -39,7 +39,6 @@ body {
 }
 #runbutton {
   border-radius: 8px;
-  /*border: 2px solid black;*/
   font-family: Arial;
   text-align: center;
   background-image: url('matrix.gif');
