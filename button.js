@@ -36,8 +36,5 @@ var run = function(message, json){
       }
     }
   }
-  if (finalmessage.length > 10) {
-    finalmessage.append(" ".charAt(11))
-  }
   document.getElementById("encodedmessage").innerHTML = finalmessage
 }
