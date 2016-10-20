@@ -28,7 +28,7 @@ var run = function(message, json){
       if (jsonindex in json) {
         finalmessage += json[jsonindex]
       } else {
-        finalmessage = 'The character >>' + jsonindex + '<< is not supported'
+        finalmessage += jsonindex
       }
     }
   }
