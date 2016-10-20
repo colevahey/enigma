@@ -43,6 +43,7 @@ body {
   text-align: center;
   background-image: url('matrix.gif');
   color: #c0c0c0;
+  font-weight: bold;
   font-size: 15px;
   width: 200px;
   margin: auto;
