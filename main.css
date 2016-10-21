@@ -4,6 +4,7 @@ body {
 #heading {
   animation-name: tester;
   animation-duration: 3s;
+  animation-iteration-count: infinite;
   font-size: 100px;
   text-align: center;
   font-family: Arial;
@@ -68,5 +69,5 @@ body {
 }
 @keyframes tester {
   from {color: white;}
-  to {color: green;}
+  to {color: #0A480D;}
 }
