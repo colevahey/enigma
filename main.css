@@ -3,6 +3,10 @@ body {
   background-color:black;
 }
 #heading {
+  animation-name: header;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 8s;
   border-radius: 8px;
   background-color: #870022;
   font-size: 100px;
@@ -13,10 +17,6 @@ body {
   transition: width 3s, color 3s, background-color 3s;
   width: 900px;
   margin: auto;
-}
-#heading:hover {
-  width: 500px;
-  background-color: #0A480D; 
 }
 #container {
   min-width: 700px;
@@ -72,4 +72,8 @@ body {
   background-color: white;
   margin: 20px 20px 20px 20px;
   padding: 3px 3px 3px 3px;
+}
+@keyframes header {
+  from {}
+  to {background-color:black;}
 }
