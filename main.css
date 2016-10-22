@@ -6,7 +6,7 @@ body {
   animation-name: header;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-duration: 8s;
+  animation-duration: 4s;
   border-radius: 8px;
   background-color: #3064ff;
   font-size: 100px;
@@ -24,7 +24,7 @@ body {
 }
 #entry {
   border: 2px solid black;
-  background-color: #870022;
+  background-color: #3064ff;
   margin: 10px auto;
   width: 550px;
 }
@@ -53,14 +53,14 @@ body {
   background-image: url('matrix.gif');
   color: #c0c0c0;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 30px;
   width: 200px;
   margin: auto;
   display: block;
 }
 #returner {
   border: 2px solid black;
-  background-color: #870022;
+  background-color: #3064ff;
   margin: 10px auto;
   width: 550px;
 }
