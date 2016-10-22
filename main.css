@@ -2,15 +2,20 @@ body {
   background-color: #0A480D;
 }
 #heading {
-  animation-name: tester;
-  animation-duration: 10s;
-  animation-delay: 3s;
+  border-radius: 8px;
+  background-color: #870022;
   font-size: 100px;
   text-align: center;
   font-family: Arial;
-  margin-top: 30px;
   font-weight: bold;
   color: white;
+  transition: width 3s, color 3s, background-color 3s;
+  width: 900px;
+  margin: auto;
+}
+#heading:hover {
+  width: 500px;
+  background-color: #0A480D; 
 }
 #container {
   min-width: 700px;
@@ -66,8 +71,4 @@ body {
   background-color: white;
   margin: 20px 20px 20px 20px;
   padding: 3px 3px 3px 3px;
-}
-@keyframes tester {
-  from {color: white;}
-  to {color: #0A480D; background-color: white; transform: rotateX(360deg);}
 }
