@@ -16,6 +16,7 @@ a:visited {
 }
 a:hover {
   color: #15541A;
+  text-decoration: underline;
 }
 #heading {
   animation-name: header;
