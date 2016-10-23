@@ -38,9 +38,3 @@ var run = function(message, json){
   }
   document.getElementById("encodedmessage").innerHTML = finalmessage
 }
-
-var copytoclipboard = function(){
-  var p = document.getElementById("encodedmessage").innerHTML;
-  var p_prime = p.cloneNode(true);
-  var messagetocopy = document.getElementById("encodedmessage").innerHTML
-}
