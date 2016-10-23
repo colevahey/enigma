@@ -76,6 +76,9 @@ body {
 #author {
   color: white;
   font-weight: bold;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
 }
 a {
   text-decoration: none;
