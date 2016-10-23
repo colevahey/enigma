@@ -3,7 +3,8 @@ body {
   background-color:black;
 }
 #author {
-  color: white
+  color: white;
+  font-weight: bold;
 }
 a {
   text-decoration: none;
