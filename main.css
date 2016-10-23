@@ -5,6 +5,18 @@ body {
 #author {
   color: white
 }
+a {
+  text-decoration: none;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: #0A480D;
+}
+a:hover {
+  color: #15541A;
+}
 #heading {
   animation-name: header;
   animation-iteration-count: infinite;
