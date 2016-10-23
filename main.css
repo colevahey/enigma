@@ -74,11 +74,13 @@ body {
   padding: 3px 3px 3px 3px;
 }
 #author {
+  text-align: center;
   color: white;
   font-weight: bold;
 }
 a {
   text-decoration: none;
+  color: white;
 }
 a:link {
   color: white;
