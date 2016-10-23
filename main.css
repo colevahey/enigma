@@ -2,23 +2,6 @@ body {
   /*background-color: #0A480D;*/
   background-color:black;
 }
-#author {
-  color: white;
-  font-weight: bold;
-}
-a {
-  text-decoration: none;
-}
-a:link {
-  color: white;
-}
-a:visited {
-  color: #0A480D;
-}
-a:hover {
-  color: #15541A;
-  text-decoration: underline;
-}
 #heading {
   animation-name: header;
   animation-iteration-count: infinite;
@@ -26,7 +9,7 @@ a:hover {
   animation-duration: 4s;
   border-radius: 8px;
   background-color: #0A480D;
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
   font-family: Comic;
   font-weight: bold;
@@ -89,6 +72,23 @@ a:hover {
   background-color: white;
   margin: 20px 20px 20px 20px;
   padding: 3px 3px 3px 3px;
+}
+#author {
+  color: white;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: #0A480D;
+}
+a:hover {
+  color: #15541A;
+  text-decoration: underline;
 }
 @keyframes header {
   from {}
