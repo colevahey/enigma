@@ -15,7 +15,7 @@ body {
   font-weight: bold;
   color: white;
   transition: width 3s, color 3s, background-color 3s;
-  width: 900px;
+  width: 800px;
   margin: 50px auto 50px auto;
 }
 #container {
