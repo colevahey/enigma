@@ -43,3 +43,9 @@ var copytoclip = function (){
   var cool = document.getElementById("encodedmessage").innerHTML
   copy(cool)
 }
+
+function myFunction() {
+  var encodedmessage = document.getElementById("encodedmessage").innerHTML;
+  var cln = encodedmessage.cloneNode(true);
+  console.log(cln)
+}
