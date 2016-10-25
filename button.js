@@ -38,3 +38,8 @@ var run = function(message, json){
   }
   document.getElementById("encodedmessage").innerHTML = finalmessage
 }
+
+var copytoclip = function (){
+  var cool = document.getElementById("encodedmessage").innerHTML
+  copy(cool)
+}
