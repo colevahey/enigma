@@ -38,3 +38,7 @@ var run = function(message, json){
   }
   document.getElementById("encodedmessage").innerHTML = finalmessage
 }
+
+if (event.keyCode == 13){
+  buttonhit(Letters)
+}
