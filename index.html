@@ -17,7 +17,7 @@
       </div>
       <div id="entry">
         <div id="enterspot">
-          <input id="enterbar" type="text" name="search" placeholder="What is your message?"/>
+          <input id="enterbar" type="text" name="search" onkeydown="if (event.keyCode == 13){buttonhit(Letters)}"placeholder="What is your message?"/>
         </div>
       </div>
       <button id="runbutton" type="submit" name="button" onclick="buttonhit(Letters)" value="enter">
