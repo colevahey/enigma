@@ -40,6 +40,7 @@ var run = function(message, json){
 }
 
 var copytoclip = function (){
-  var cool = document.getElementById("encodedmessage").innerHTML
-  copy(cool)
+  var tobecopied = document.getElementById("encodedmessage").innerHTML
+  tobecopied.select()
+  document.execCommand('copy')
 }
