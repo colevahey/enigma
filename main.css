@@ -20,7 +20,6 @@ body {
 }
 #container {
   min-width: 700px;
-  position: fixed;
   margin: auto;
 }
 #entry {
