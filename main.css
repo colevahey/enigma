@@ -20,6 +20,7 @@ body {
 }
 #container {
   min-width: 700px;
+  position: fixed;
   margin: auto;
 }
 #entry {
@@ -97,6 +98,9 @@ a:hover {
   width: 0px;
   background-color: black;
   border: 1px solid black;
+  bottom: 0px;
+  left: 0px;
+  position: fixed;
 }
 @keyframes header {
   from {}
