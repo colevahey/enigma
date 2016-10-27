@@ -92,6 +92,10 @@ a:hover {
   color: #15541A;
   text-decoration: underline;
 }
+#copyspot {
+  height: 10px;
+  width: 10px;
+}
 @keyframes header {
   from {}
   to {background-color:black; width: 500px;}
