@@ -41,6 +41,8 @@ var run = function(message, json){
 
 var copytoclip = function (){
   var tobecopied = document.getElementById("encodedmessage").innerHTML
-  tobecopied.select()
+  var copyspot = document.getElementById("copyspot")
+  copyspot.value = tobecopied
+  copyspot.select()
   document.execCommand('copy')
 }
