@@ -93,10 +93,9 @@ a:hover {
   text-decoration: underline;
 }
 #copyspot {
+  visibility: hidden;
   height: 0px;
   width: 0px;
-  background-color: black;
-  border: 1px solid black;
   bottom: 0px;
   left: 0px;
   position: fixed;
