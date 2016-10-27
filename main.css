@@ -74,6 +74,8 @@ body {
   padding: 3px 3px 3px 3px;
 }
 #copytoclip {
+  position:fixed;
+  right: 10px;
 }
 #copyicon {
   height:10px;
