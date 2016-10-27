@@ -93,8 +93,10 @@ a:hover {
   text-decoration: underline;
 }
 #copyspot {
-  height: 10px;
-  width: 10px;
+  height: 0px;
+  width: 0px;
+  background-color: black;
+  border: 1px solid black;
 }
 @keyframes header {
   from {}
