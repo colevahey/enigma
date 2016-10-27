@@ -93,7 +93,6 @@ a:hover {
   text-decoration: underline;
 }
 #copyspot {
-  bottom: 0px;
   left: -99999px;
   position: absolute;
 }
