@@ -74,9 +74,16 @@ body {
   padding: 3px 3px 3px 3px;
 }
 #copytoclip {
+  float: right;
+  margin-top: -70px;
+  margin-right: 10px;
+  height: 60px;
+  width: 60px;
 }
 #copyicon {
-  height:10px;
+  height: 35px;
+  padding-top: 2px;
+  padding-bottom: 1px;
 }
 #author {
   text-align: center;
