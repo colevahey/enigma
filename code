@@ -3,23 +3,20 @@
 """Creates a random code that messages will be encoded to"""
 
 import random
-import skilstak.colors as colors
-import sys
+import string
+import json
 
 def main():
-    letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-    with open('currentcode.js', 'w') as code:
-        print(colors.clear + colors.red + "Code:" + colors.orange)
-        code.write("var Letters = {")
-        for key in "abcdefghijklmnopqrstuvwxyz":
-            value = random.choice(letters)
-            letters.remove(value)
-            sys.stdout.write(value)
-            code.write(
-                    '"' + key + '":"' + value + '","' + key.upper() + '":"' + value.upper() + '",'
-                )
-        code.write('" ":" "}')
-        print()
+    jsonfile = open('currentcode.js', 'w')
+    letters = [ x for x in string.ascii_lowercase ]
+    keys = [ x for x in letters ]
+    random.shuffle(letters)
+    values = [ y for y in letters ]
+    code = {}
+    for i in range(len(letters)):
+        code.update({keys[i]:values[i]})
+    print(values)
+    jsonfile.write(str(code))
 
 if __name__ == '__main__':
     main()
