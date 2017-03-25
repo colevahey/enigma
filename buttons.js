@@ -1,6 +1,6 @@
 "use strict"
 
-var buttonhit = function(json){
+var runner = function(json){
   var message = document.getElementById("enterbar").value
   if (message !== ""){
     var finalmessage = ""
