@@ -12,7 +12,7 @@ body {
   margin: 50px auto 50px auto;
 }
 #container {
-  min-width: 700px;
+  min-width: 800px;
   margin: auto;
 }
 #entry {
@@ -70,6 +70,7 @@ body {
   text-align: center;
   color: white;
   font-weight: bold;
+  margin: auto;
 }
 a {
   text-decoration: none;
