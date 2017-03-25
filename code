@@ -15,6 +15,7 @@ def main():
     code = {}
     for i in range(len(letters)):
         code.update({keys[i]:values[i]})
+        code.update({keys[i].title():values[i].title()})
     print(values)
     jsonfile.write("var Letters = " + str(code))
 
