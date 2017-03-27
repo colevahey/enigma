@@ -4,29 +4,56 @@
     Enigma
   </title>
   <head>
+
+    <!--Icon for chrome to show-->
     <link rel="shortcut icon" href="assets/icon.png"/>
+
+    <!--Button script which has the functions for the runner and copy to clipboard functions-->
     <script type="text/javascript" src="./buttons.js"></script>
+
+    <!--Code to be used for encrypting-->
     <script type="text/javascript" src="./currentcode.js"></script>
+
     <link rel="stylesheet" type="text/css" href="./main.css">
   </head>
   <body>
+
+    <!--Container so that the alignment does not get totally wacky when the user resizes.-->
     <div id="container">
+
       <div id="heading">
         <p>Enigma</p>
       </div>
       <div id="entry">
         <div id="enterspot">
+
+          <!--Place for users to input their message. Must have a message for the function to run.-->
           <input id="enterbar" type="text" name="search" onkeyup="runner(Letters)" placeholder="What is your message?"/>
+
         </div>
       </div>
       <div id="returner">
+
+        <!--The spot the user will receive their encoded message-->
         <div id="returnerspot">
+
+          <!--Placeholder for the user message back-->
           <p id="encodedmessage">Message</p>
+
         </div>
+
+        <!--Copy to clipboard button which copies the message of the user from the copyspot-->
         <button id="copytoclip" type="submit" name="button" onclick='copytoclip()'><img src="assets/copytoclip.png" id="copyicon"/></button>
+
       </div>
+
+      <!--Link to github of the author-->
       <footer id="author">Creator: <a href="http://github.com/colevahey">Cole Vahey</a></footer>
+
     </div>
+
+    <!--Text area for the copy to clipboard function-->
     <textarea type="submit" value="" id="copyspot"></textarea>
+
   </body>
 </html>
