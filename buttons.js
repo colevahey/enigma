@@ -30,7 +30,7 @@ var runner = function(json){
     }
     document.getElementById("encodedmessage").innerHTML = finalmessage
   } else {
-    document.getElementById("encodedmessage").innerHTML = 'Message'
+    document.getElementById("encodedmessage").innerHTML = 'Encrypted'
   }
 }
 
