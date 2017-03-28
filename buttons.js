@@ -2,7 +2,7 @@
 
 var runner = function(json){
   var message = document.getElementById("enterbar").value
-  if (message !== ""){
+  if (message !== "" && message !== "#"){
     var finalmessage = ""
     if (message.startsWith("#")){
       var ret = {};
