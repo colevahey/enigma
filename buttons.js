@@ -29,7 +29,6 @@ var runner = function(json){
       }
     }
     document.getElementById("encodedmessage").innerHTML = finalmessage
-    console.log(finalmessage)
   } else {
     document.getElementById("encodedmessage").innerHTML = 'Encrypted'
   }
