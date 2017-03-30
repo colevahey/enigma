@@ -4,7 +4,6 @@
 
 import random
 import string
-import json
 
 def main():
     #Open the js file for writing
