@@ -4,6 +4,11 @@
     "description": "Text encoder and decoder created by Cole Vahey",
     "icons": [
         {
+            "src": "./assets/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
             "src": "./assets/icon-144.png",
             "sizes": "144x144",
             "type": "image/png"
