@@ -61,5 +61,12 @@
     <!--Text area for the copy to clipboard function-->
     <textarea type="submit" value="" id="copyspot"></textarea>
 
+		<script>
+		if('serviceWorker' in navigator) {
+			navigator.serviceWorker
+							 .register('./sw.js')
+					 		 .then(function() { console.log("Service Worker Registered"); });
+		}
+		</script>
   </body>
 </html>
