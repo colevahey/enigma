@@ -72,13 +72,13 @@ body {
 }
 #author {
   text-align: center;
-  color: white;
+  color: black;
   font-weight: bold;
   margin: auto;
 }
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 a:link {
   color: white;
@@ -91,6 +91,6 @@ a:hover {
   text-decoration: underline;
 }
 #copyspot {
-  left: -99999px;
+  top: -99999px;
   position: absolute;
 }
