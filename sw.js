@@ -1,8 +1,8 @@
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open('colevahey.github.io/enigma').then(function(cache) {
+    caches.open('.').then(function(cache) {
       return cache.addAll([
-        './main.css',
+        '/main.css',
         '/site.js'
         // etc
       ]);
