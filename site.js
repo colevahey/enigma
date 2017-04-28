@@ -41,3 +41,8 @@ var copytoclip = function (){
   copyspot.select()
   document.execCommand('copy')
 }
+
+var tweettext = function (){
+  var text = document.getElementById("encodedmessage").innerHTML
+  return message
+}
