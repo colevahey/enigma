@@ -2,9 +2,9 @@
 
 var runner = function(json){
   var message = document.getElementById("enterbar").value
-  if (message !== "" && message !== "#"){
+  if (message !== "" && message !== "Ǝ"){
     var finalmessage = ""
-    if (message.startsWith("#")){
+    if (message.startsWith("Ǝ")){
       var ret = {};
       for(var key in json){
         ret[json[key]] = key
@@ -18,7 +18,7 @@ var runner = function(json){
         }
       }
     } else {
-      finalmessage += "#"
+      finalmessage += "Ǝ"
       for (var n = 0; n < message.length; n++){
         var jsonindex = message[n]
         if (jsonindex in json) {
@@ -42,7 +42,8 @@ var copytoclip = function (){
   document.execCommand('copy')
 }
 
-var tweettext = function (){
-  var text = document.getElementById("encodedmessage").innerHTML
-  return text
+var tweet = function (){
+	var message = document.getElementById('encodedmessage').innerHTML;
+  var tweetUrl = "https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fcvenigma.surge.sh%2F&ref_src=twsrc%5Etfw&text=" + message + "&tw_p=tweetbutton&url=http%3A%2F%2Fcolevahey.github.io%2Fenigma"
+  window.open(tweetUrl);
 }
