@@ -44,5 +44,5 @@ var copytoclip = function (){
 
 var tweettext = function (){
   var text = document.getElementById("encodedmessage").innerHTML
-  return message
+  return text
 }
