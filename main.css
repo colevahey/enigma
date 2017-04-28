@@ -11,10 +11,10 @@ body {
   width: 800px;
   margin: 50px auto 50px auto;
 }
-#container {
+/*#container {
   min-width: 800px;
   margin: auto;
-}
+}*/
 #entry {
   border: 2px solid black;
   background-color: #0A480D;
