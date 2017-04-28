@@ -58,6 +58,11 @@ body {
   padding: 3px 3px 3px 3px;
   border-radius: 3px;
 }
+.share {
+  border-radius: 5px;
+  height: 35px;
+  width: 35px;
+}
 #copytoclip {
   float: right;
   margin-top: -100px;
