@@ -24,34 +24,37 @@
     <link rel="stylesheet" type="text/css" href="./main.css">
   </head>
   <body>
-    <div id="heading">
-      <p>Enigma</p>
-    </div>
-    <div id="entry">
-      <div id="enterspot">
+    <div id="container">
+      <div id="heading">
+        <p>Enigma</p>
+      </div>
+      <div id="entry">
+        <div id="enterspot">
 
-        <!--Place for users to input their message. Must have a message for the function to run.-->
-        <input id="enterbar" type="text" name="search" onkeyup="runner(Letters)" placeholder="What is your message?"/>
+          <!--Place for users to input their message. Must have a message for the function to run.-->
+          <input id="enterbar" type="text" name="search" onkeyup="runner(Letters)" placeholder="What is your message?"/>
+
+        </div>
+      </div>
+      <div id="returner">
+
+        <!--The spot the user will receive their encoded message-->
+        <div id="returnerspot">
+
+          <!--Placeholder for the user message back-->
+          <p id="encodedmessage">Encrypted</p>
+
+        </div>
+
+        <!--Copy to clipboard button which copies the message of the user from the copyspot-->
+        <button id="copytoclip" type="submit" name="button" onclick='copytoclip()'>Copy<img src="assets/copytoclip.png" id="copyicon" alt="Copy"/></button>
 
       </div>
-    </div>
-    <div id="returner">
 
-      <!--The spot the user will receive their encoded message-->
-      <div id="returnerspot">
-
-        <!--Placeholder for the user message back-->
-        <p id="encodedmessage">Encrypted</p>
-
-      </div>
-
-      <!--Copy to clipboard button which copies the message of the user from the copyspot-->
-      <button id="copytoclip" type="submit" name="button" onclick='copytoclip()'>Copy<img src="assets/copytoclip.png" id="copyicon" alt="Copy"/></button>
+      <!--Link to the github of the author-->
+      <footer id="author">Creator: <a href="http://github.com/colevahey">Cole Vahey</a></footer>
 
     </div>
-
-    <!--Link to the github of the author-->
-    <footer id="author">Creator: <a href="http://github.com/colevahey">Cole Vahey</a></footer>
 
     <!--Tweet button-->
     <input class="share" type="image" onclick="tweet()" src="./assets/twitter.png"/>
