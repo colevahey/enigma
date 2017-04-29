@@ -60,10 +60,17 @@ var tweet = function (){
 var sms = function (){
   var message = document.getElementById('encodedmessage').innerHTML
   if (message != "Encrypted") {
-    //HAVE TO HAVE A CHECK FOR PHONE MAKE
-    var smsUrl = "sms:?body=" + message + " colevahey.github.io/enigma"
+    if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+      var smsUrl = "sms:&body=" + message + " colevahey.github.io/enigma"
+    } else {
+      var smsUrl = "sms:?body=" + message + " colevahey.github.io/enigma"
+    }
   } else {
-    var smsUrl = "sms:?body=Enigma Encoding Project colevahey.github.io/enigma"
+    if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+      var smsUrl = "sms:&body=Enigma Encoding Project colevahey.github.io/enigma"
+    } else {
+      var smsUrl = "sms:?body=Enigma Encoding Project colevahey.github.io/enigma"
+    }
   }
   window.open(smsUrl)
 }
