@@ -29,8 +29,11 @@ var runner = function(json){
       }
     }
     document.getElementById("encodedmessage").innerHTML = finalmessage
-  } else if (message == "<") {
-    window.alert("FORBIDDEN")
+  } else if (message.startsWith("<")) {
+    window.alert("The < is not permitted as the initial character")
+    var finalmessage = "Encrypted"
+    document.getElementById("enterbar").value = ""
+    document.getElementById("encodedmessage").innerHTML = finalmessage
   } else {
     document.getElementById("encodedmessage").innerHTML = 'Encrypted'
   }
