@@ -2,7 +2,7 @@
 
 var runner = function(json){
   var message = document.getElementById("enterbar").value
-  if (message !== "" && message !== "Ǝ"){
+  if (message !== "" && message !== "Ǝ" && message !== "<"){
     var finalmessage = ""
     if (message.startsWith("Ǝ")){
       var ret = {};
@@ -29,6 +29,8 @@ var runner = function(json){
       }
     }
     document.getElementById("encodedmessage").innerHTML = finalmessage
+  } else if (message == "<") {
+    window.alert("FORBIDDEN")
   } else {
     document.getElementById("encodedmessage").innerHTML = 'Encrypted'
   }
