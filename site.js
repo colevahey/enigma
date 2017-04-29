@@ -43,7 +43,7 @@ var copytoclip = function (){
 }
 
 var tweet = function (){
-	var message = document.getElementById('encodedmessage').innerHTML;
+	var message = document.getElementById('encodedmessage').innerHTML
   if (message != "Encrypted") {
     var tweetUrl = "https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fcvenigma.surge.sh%2F&ref_src=twsrc%5Etfw&text=" + message + "&tw_p=tweetbutton&url=http%3A%2F%2Fcolevahey.github.io%2Fenigma"
   } else {
@@ -52,3 +52,13 @@ var tweet = function (){
   window.open(tweetUrl);
 }
 
+var sms = function (){
+  var message = document.getElementById('encodedmessage').innerHTML
+  if (message != "Encrypted") {
+    //HAVE TO HAVE A CHECK FOR PHONE MAKE
+    var smsUrl = "sms:?body=" + message + " colevahey.github.io/enigma"
+  } else {
+    var smsUrl = "sms:?body=Enigma Encoding Project colevahey.github.io/enigma"
+  }
+  window.open(smsUrl)
+}
