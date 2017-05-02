@@ -8,7 +8,7 @@ body {
   text-align: center;
   font-family: Comic;
   font-weight: bold;
-  color: white;
+  color: black;
   width: 800px;
   margin: 50px auto 50px auto;
 }
@@ -58,6 +58,12 @@ body {
   margin: 20px 20px 20px 20px;
   padding: 3px 3px 3px 3px;
   border-radius: 3px;
+}
+/*Test with this div more*/
+#sharers {
+  height: 50;
+  width: 90;
+  border-radius: 5px;
 }
 .share {
   border-radius: 5px;

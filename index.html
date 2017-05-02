@@ -59,11 +59,13 @@
     <!--Text area for the copy to clipboard function-->
     <textarea type="submit" value="" id="copyspot"></textarea>
 
-    <!--Tweet button-->
-    <input class="share" type="image" onclick="tweet()" src="./assets/twitter.png"/>
+    <div id="sharers">
+      <!--Tweet button-->
+      <input class="share" type="image" onclick="tweet()" src="./assets/twitter.png"/>
 
-    <!--SMS button-->
-    <input class="share" type="image" onclick="sms()" src="./assets/sms.png"/>
+      <!--SMS button-->
+      <input class="share" type="image" onclick="sms()" src="./assets/sms.png"/>
+    </div>
 
     <!--Registers the service worker-->
 		<script>
