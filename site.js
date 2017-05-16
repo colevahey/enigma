@@ -1,7 +1,13 @@
 "use strict"
 
 var runner = function(json){
-  var message = document.getElementById("enterbar").value
+  if (location.search != "") {
+    var message = location.search
+    document.getElementById("enterbar").value = message
+    //Have to convert this to utf-8 from %s in html
+  } else {
+    var message = document.getElementById("enterbar").value
+  }
   if (message !== "" && message !== "Ǝ" && message !== "<"){
     var finalmessage = ""
     if (message.startsWith("Ǝ")){
