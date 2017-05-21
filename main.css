@@ -1,6 +1,5 @@
 body {
-  background-image:url('./assets/background.svg');
-  /*background-color: black;*/
+  background-color: #53bc45;
 }
 #heading {
   border-radius: 8px;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <title>
     Enigma
   </title>
@@ -18,7 +18,7 @@
     <script type="text/javascript" src="./currentcode.js"></script>
 
     <!--Meta for mobile support-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes"/>
+    <meta name="viewport" content="initial-scale=1"/>
     <meta name="theme-color" content="#0A480D"/>
 
     <link rel="stylesheet" type="text/css" href="./main.css">
@@ -61,19 +61,14 @@
 
     <div id="sharers">
       <!--Tweet button-->
-      <input class="share" type="image" onclick="tweet()" src="./assets/twitter.png"/>
+      <input class="share" alt="tweet" type="image" onclick="tweet()" src="./assets/twitter.png"/>
 
       <!--SMS button-->
-      <input class="share" type="image" onclick="sms()" src="./assets/sms.png"/>
+      <input class="share" alt="sms" type="image" onclick="sms()" src="./assets/sms.png"/>
+      <script>
+        if ('serviceWorker' in navigator) {window.addEventListener('load', function() {navigator.serviceWorker.register('/build/sw.js').then(function(registration) {console.log('ServiceWorker registration successful with scope: ', registration.scope)}, function(err) {console.log('ServiceWorker registration failed: ', err)})})}
+      </script>
     </div>
 
-    <!--Registers the service worker-->
-		<script>
-		if('serviceWorker' in navigator) {
-			navigator.serviceWorker
-							 .register('./sw.js')
-					 		 .then(function() { console.log("Service Worker Registered"); });
-		}
-		</script>
   </body>
 </html>
