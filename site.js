@@ -60,7 +60,7 @@ var tweet = function (){
   } else {
     var tweetUrl = "https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fcvenigma.surge.sh%2F&ref_src=twsrc%5Etfw&text=Enigma+Encoding+Project&tw_p=tweetbutton&url=http%3A%2F%2Fcolevahey.github.io%2Fenigma"
   }
-  window.open(tweetUrl);
+  window.open(tweetUrl, "", "width=600px,height=500px");
 }
 
 var sms = function (){
