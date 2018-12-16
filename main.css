@@ -12,6 +12,7 @@ body {
   text-align: center;
   font-family: Comic;
   font-weight: bold;
+  width: 100vw;
   color: #0A480D;
   margin: 0px auto 50px auto;
 }
