@@ -7,19 +7,14 @@
 
     <!--Manifest with info about the page-->
     <link rel="manifest" href="manifest.json" />
+    <meta name="Description" content="Enigma Project main page where messages can be encoded and decoded through the Enigma machine. Input data and get an encrypted message back that you can share with friends and they can decode it with the same site!">
+
+    <!--Meta for mobile support-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0A480D"/>
 
     <!--Icon for chrome to show-->
     <link rel="shortcut icon" href="assets/icon-17.png"/>
-
-    <!--Button script which has the functions for the runner and copy to clipboard functions-->
-    <script type="text/javascript" src="./site.js"></script>
-
-    <!--Code to be used for encrypting-->
-    <script type="text/javascript" src="./currentcode.js"></script>
-
-    <!--Meta for mobile support-->
-    <meta name="viewport" content="initial-scale=1"/>
-    <meta name="theme-color" content="#0A480D"/>
 
     <link rel="stylesheet" type="text/css" href="./main.css">
   </head>
@@ -51,9 +46,6 @@
 
       </div>
 
-      <!--Link to the github of the author-->
-      <footer id="author">Creator: <a href="http://github.com/colevahey">Cole Vahey</a></footer>
-
     </div>
 
     <!--Text area for the copy to clipboard function-->
@@ -64,11 +56,30 @@
       <input class="share" alt="tweet" type="image" onclick="tweet()" src="./assets/twitter.png"/>
 
       <!--SMS button-->
-      <input class="share" alt="sms" type="image" onclick="sms()" src="./assets/sms.png"/>
-      <script>
-        if ('serviceWorker' in navigator) {window.addEventListener('load', function() {navigator.serviceWorker.register('/build/sw.js').then(function(registration) {console.log('ServiceWorker registration successful with scope: ', registration.scope)}, function(err) {console.log('ServiceWorker registration failed: ', err)})})}
-      </script>
+      <input class="share" alt="sms" type="image" onclick="sms()" src="./assets/sms.png"/>   
     </div>
+    
+    <!--Link to the github of the author-->
+    <footer id="author">Created by <a href="http://github.com/colevahey">Cole Vahey</a></footer>
 
+    <!--Code to be used for encrypting-->
+    <script type="text/javascript" src="currentcode.js"></script>
+
+    <!--Button script which has the functions for the runner and copy to clipboard functions-->
+    <script type="text/javascript" src="site.js"></script>
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', _ => {
+          navigator.serviceWorker.register('sw.js').then(
+            registration => {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope)
+            }, err => {
+              console.log('ServiceWorker registration failed: ', err)
+            }
+          )
+        })
+      }
+    </script>
   </body>
 </html>
